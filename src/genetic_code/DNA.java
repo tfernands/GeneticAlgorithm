@@ -6,7 +6,7 @@
 package genetic_code;
 
 /**
- *
+ * testando conexão github
  * @author Thales
  */
 public class DNA implements Comparable<DNA>{
