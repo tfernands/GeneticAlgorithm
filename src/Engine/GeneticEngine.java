@@ -30,9 +30,17 @@ public abstract class GeneticEngine<T extends Evolvable>{
     public GeneticEngine(Paramters parameters, T sample){
         this.sample = sample;
         this.p = parameters;
+        init();
+    }
+    
+    public GeneticEngine(T sample){
+        this.p = new Paramters();
+        init();
+    }
+    
+    private void init(){
         random = new Random();
-        pop = new ArrayList<>(p.populationSize);
-        popNextGeneration = new ArrayList<>(p.populationSize);
+        pop = new ArrayList<>(p.populationSize);popNextGeneration = new ArrayList<>(p.populationSize);
         for (int i = 0; i < p.populationSize; i++){
             pop.add(new Organism(sample, i).ramdomize(p.randomMin, p.randomMax, random));
         }

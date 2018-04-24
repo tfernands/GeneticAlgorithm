@@ -15,17 +15,18 @@ import Engine.Paramters;
 public class GeneticAlgorithm {
 
     static String target = "In computer science and operations research, a genetic algorithm (GA) is a metaheuristic inspired by the process of natural selection that belongs to the larger class of evolutionary algorithms (EA). Genetic algorithms are commonly used to generate high-quality solutions to optimization and search problems by relying on bio-inspired operators such as mutation, crossover and selection.";
-    //static String target = "ABCDEFGHIJKLMNOP";
+    
     public static void main(String[] args) {
                 
         EvolvableString es = new EvolvableString(target.length());
         
         Paramters p = new Paramters();
         p.populationSize = 150;
-        p.randomMax = 127;
-        p.randomMin = 32;
+        p.randomMax = 128;
+        p.randomMin = 31;
         
         GeneticEngine<EvolvableString> ge = new GeneticEngine<EvolvableString>(p,es) {
+            
             @Override
             public double evaluateFitness(EvolvableString a) {
                 double fitness = 0;
@@ -36,11 +37,13 @@ public class GeneticAlgorithm {
                 }
                 return fitness/a.string.length;
             }
+        
         };
         
-        for (int i = 0; i < 100; i++){
+        for (int i = 0; i < 5000; i++){
             ge.evolve();
-            System.out.println(ge);
+            System.out.println("\n"+ge);
+            if (ge.best.fitness >= 0.99999999) break;
         }
         
     }
