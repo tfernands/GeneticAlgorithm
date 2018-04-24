@@ -13,7 +13,7 @@ public class Paramters {
     
     public int      populationSize = 150;
     public int      ellitism = 2;
-    public int      exclusion = 2;
+    public int      mattingPool = 30;
     public double   mutationRate = 0.05;
     public double   randomMutation = 0.1;
     public double   randomMin = -1;

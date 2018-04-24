@@ -7,7 +7,6 @@ package geneticalgorithm;
 
 import Engine.GeneticEngine;
 import Engine.Paramters;
-import java.util.Arrays;
 
 /**
  *
@@ -39,10 +38,10 @@ public class GeneticAlgorithm {
             }
         };
         
-        System.out.println(ge.pop);
+        for (int i = 0; i < 100; i++){
+            ge.evolve();
+            System.out.println(ge);
+        }
         
-        ge.evolve();
-        
-        System.out.println(ge);
     }
 }

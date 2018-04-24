@@ -2,7 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
         <group name="MachineLearning"/>
+        <group>
+            <file>file:/C:/Users/TERMINAL/Documents/NetBeansProjects/GeneticAlgorithm/src/geneticalgorithm/GeneticAlgorithm.java</file>
+            <file>file:/C:/Users/TERMINAL/Documents/NetBeansProjects/GeneticAlgorithm/src/Engine/Paramters.java</file>
+            <file>file:/C:/Users/TERMINAL/Documents/NetBeansProjects/GeneticAlgorithm/src/Engine/GeneticEngine.java</file>
+        </group>
     </open-files>
 </project-private>
