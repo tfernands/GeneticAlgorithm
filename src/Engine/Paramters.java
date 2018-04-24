@@ -11,11 +11,16 @@ package Engine;
  */
 public class Paramters {
     
-    public final double mutationRate = 0.05;
-    public final double randomMutation = 0.1;
-    public final double randomMutationRange = 2;
-    public final double mutationPower = 0.2;
-    public final int ellitism = 2;
-    public final int addRandomOrganism = 2;
+    public int      populationSize = 150;
+    public int      ellitism = 2;
+    public int      exclusion = 2;
+    public double   mutationRate = 0.05;
+    public double   randomMutation = 0.1;
+    public double   randomMin = -1;
+    public double   randomMax = 1;
+    public double   randomMutationRange = 2;
+    public double   mutationPower = 0.2;
+    public int      addRandomOrganism = 2;
     
+
 }

@@ -5,6 +5,8 @@
  */
 package Engine;
 
-public interface Evolvable{
+public interface Evolvable<T extends Evolvable>{
     public double[] getGenome();
+    public T fromGenome(double[] genome);
+    public T copy();
 }
